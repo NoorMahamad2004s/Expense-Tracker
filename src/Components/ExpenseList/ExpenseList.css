@@ -1,0 +1,38 @@
+
+.expense-list{
+    
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 2px solid white;
+    width: 600px;
+    height: 295px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+   
+}
+
+.expense-list li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.expense-list button{
+    background-color: red;
+    color: white;
+    border-style: none;
+    font-size: 20px;
+    border-radius: 40px;
+    text-align: center;
+    /* margin-left: 250px; */
+    align-self: flex-end;
+    margin-right: 20px;
+
+    
+}
