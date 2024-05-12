@@ -16,7 +16,7 @@ function ExpenseList({ expenses, deleteExpense }) {
     <table>
     <thead>
       <tr>
-        <th>Name</th>
+        <th>Title</th>
         <th>Amount</th>
         <th>Date</th>
         <th>Action</th>
