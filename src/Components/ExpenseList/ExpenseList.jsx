@@ -13,16 +13,30 @@ function ExpenseList({ expenses, deleteExpense }) {
 
     <div className="expense-list">
       
-      <ul>
-        {expenses.map((expense) => (
-          <li key={expense.id}>
-            <span>{expense.title} - ₹{expense.amount} - {expense.date}</span>
+    <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Amount</th>
+        <th>Date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      {expenses.map((expense) => (
+        <tr key={expense.id}>
+          <td>{expense.title}</td>
+          <td>₹{expense.amount}</td>
+          <td>{expense.date}</td>
+          <td>
             <button onClick={() => deleteExpense(expense.id)} className='dltBtn'>
               <MdDelete />
             </button>
-          </li>
-        ))}
-      </ul> 
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
     </div>
     </div>
   );

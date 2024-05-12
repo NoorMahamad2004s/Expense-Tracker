@@ -9,19 +9,13 @@
     height: 295px;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* flex-direction: column; */
+    justify-content: space-around;
 
    
 }
 
-.expense-list li{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
+
 
 .expense-list button{
     background-color: red;
@@ -33,6 +27,27 @@
     /* margin-left: 250px; */
     align-self: flex-end;
     margin-right: 20px;
-
     
 }
+
+.expense-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .expense-list th {
+    text-align: left;
+    vertical-align: top; /* Align headings to the top */
+  }
+  
+  .expense-list th, .expense-list td {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top; /* Align cell content to the top */
+  }
+  
+  .expense-list th:last-child, .expense-list td:last-child {
+    text-align: center;
+  }
+  
+  
