@@ -1,13 +1,14 @@
 // import React from 'react';
 import Modal from 'react-modal';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import './ExpenseModal.css'
 
 
 const ExpenseModal = ({ isOpen, closeModal, addExpense, title, setTitle, amount, setAmount, date, setDate, category, setCategory }) => {
   return (
-    <Modal isOpen={isOpen} onRequestClose={closeModal} contentLabel="Add Expense Modal">
-      <h2>Add Expense</h2>
-      <form onSubmit={addExpense}>
+    <Modal isOpen={isOpen} onRequestClose={closeModal} contentLabel="Add Expense Modal" className='mainExpenseModal'>
+      <h2 className='expenseHeading'>Add Expense</h2>
+      <form onSubmit={addExpense} className='expenseModal'>
         <input
           type="text"
           value={title}
@@ -35,8 +36,8 @@ const ExpenseModal = ({ isOpen, closeModal, addExpense, title, setTitle, amount,
           placeholder="Category"
           required
         />
-        <button type="submit">Add Expense</button>
-        <button onClick={closeModal}>Cancel</button>
+        <button type="submit" className='addExpenseModal'>Add Expense</button>
+        <button onClick={closeModal} className='cancelExpenseModal'>Cancel</button>
       </form>
     </Modal>
   );

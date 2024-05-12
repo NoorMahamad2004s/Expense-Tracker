@@ -1,0 +1,68 @@
+.mainIncomeModal {
+    position: fixed;
+    top: 15%;
+    left: 15%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .incomeModal {
+    background-color: #EFEFEF;
+    padding: 20px;
+    border-radius: 20px;
+    width: 540px;
+    height: 165px;
+    position: relative;
+    transform: translate(-50%, -50%);
+  }
+  
+  .incomeModal h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .incomeForm {
+    display: flex;
+    align-items: center;
+  }
+  
+  .incomeForm input {
+    flex: 1;
+    padding: 13px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+  }
+  
+  .incomeForm button {
+    padding: 15px 20px;
+   
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .addIncomeBtn{
+    background-color: #F4BB4A;
+    color: #FFFFFF;
+  } 
+
+  .cancelBtnIncome{
+    background-color: D9D9D9;
+    color: #000000;
+  }
+  
+
+  
+  .incomeForm button + button {
+    margin-left: 10px;
+  }
+  
+.incomeModalHeading{
+    color: #000000;
+}
